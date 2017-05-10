@@ -14,8 +14,6 @@ RSpec.describe "tests/edit", type: :view do
     assert_select "form[action=?][method=?]", test_path(@test), "post" do
 
       assert_select "input#test_name[name=?]", "test[name]"
-
-      assert_select "input#test_status[name=?]", "test[status]"
     end
   end
 end

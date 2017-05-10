@@ -18,7 +18,7 @@ class FeaturesControllerTest < ActionController::TestCase
 
   test "should create feature" do
     assert_difference('Feature.count') do
-      post :create, feature: { name: @feature.name, test_status: @feature.test_status }
+      post :create, feature: { name: @feature.name}
     end
 
     assert_redirected_to feature_path(assigns(:feature))
@@ -35,7 +35,7 @@ class FeaturesControllerTest < ActionController::TestCase
   end
 
   test "should update feature" do
-    patch :update, id: @feature, feature: { name: @feature.name, test_status: @feature.test_status }
+    patch :update, id: @feature, feature: { name: @feature.name}
     assert_redirected_to feature_path(assigns(:feature))
   end
 
