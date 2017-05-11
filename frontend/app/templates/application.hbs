@@ -1,9 +1,18 @@
-
-<!-- <div class="jumbo">
-  <div class="right tomster"></div> -->
-  <h1>Test Manager</h1>
-<!-- </div> -->
-{{#link-to 'features' class="button"}}
-    See All Features
+<div class="container">
+  <div class="menu">
+  {{#link-to 'index'}}
+    <h1><em>Test Manager</em></h1>
   {{/link-to}}
-{{outlet}}
+  <div class="links">
+    {{#link-to 'features'}}
+      Features
+    {{/link-to}} |
+    {{#link-to 'tests'}}
+      Tests
+    {{/link-to}}
+  </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>
