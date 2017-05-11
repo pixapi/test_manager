@@ -1,14 +1,8 @@
-<!-- <div class="jumbo">
-  <div class="right tomster"></div> -->
   <h2>Features List</h2>
   <ul>
     {{#each model as |feature|}}
-    <!-- <li>{{#link-to 'features'}}
-      Features
-    {{/link-to}}</li> -->
-    <li>{{feature}}</li>
+      <li>{{feature.name}}</li>
     {{/each}}
   </ul>
-<!-- </div> -->
 
 {{outlet}}

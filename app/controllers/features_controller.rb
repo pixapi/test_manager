@@ -4,10 +4,13 @@ class FeaturesController < ApplicationController
   # GET /features
   def index
     @features = Feature.all
+    render json: @features
   end
 
   # GET /features/1
   def show
+    @feature = Feature.find(params[:id])
+    render json: @feature
   end
 
   # GET /features/new
